@@ -158,7 +158,7 @@ void init_problem(){
     }
 }
 void run(){
-  // Write our data set into the input array in device memory
+    // Write our data set into the input array in device memory
     //
     err = clEnqueueWriteBuffer(commands, input1, CL_TRUE, 0, sizeof(float) * DATA_SIZE, data1, 0, NULL, NULL);
     err = clEnqueueWriteBuffer(commands, input2, CL_TRUE, 0, sizeof(float) * DATA_SIZE, data2, 0, NULL, NULL);
